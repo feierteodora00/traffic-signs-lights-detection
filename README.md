@@ -10,8 +10,7 @@ Configurations:
 4. YOLOv4-tiny, network input size 416*416
 5. Tuned network (augmentation parameters, learning rate, burn in, original achors), network input size 416*416 
 
-V1, V2, V3, V4 and V5 contain the configurations files and results (upon testing) for each of the specified configuration. 
-weights_v1, weights_v2, weights_v3, weights_v4 and weights_v5 contain the weights used for testing of each configuration (at different points). 
+V1, V2, V3, V4 and V5 contain the configurations files and results (upon testing at different points) for each of the specified configuration. 
 
 *csv_files* folder provides files to be used for data visualization
 
