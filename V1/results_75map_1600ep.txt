@@ -1,0 +1,36 @@
+ CUDNN_HALF=1 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 16, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 102 K-images (1 Kilo-batches_64) 
+
+ calculation mAP (mean average precision)...
+ Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+
+ detections_count = 4645, unique_truth_count = 1033  
+ rank = 0 of ranks = 4645  rank = 100 of ranks = 4645  rank = 200 of ranks = 4645  rank = 300 of ranks = 4645  rank = 400 of ranks = 4645  rank = 500 of ranks = 4645  rank = 600 of ranks = 4645  rank = 700 of ranks = 4645  rank = 800 of ranks = 4645  rank = 900 of ranks = 4645  rank = 1000 of ranks = 4645  rank = 1100 of ranks = 4645  rank = 1200 of ranks = 4645  rank = 1300 of ranks = 4645  rank = 1400 of ranks = 4645  rank = 1500 of ranks = 4645  rank = 1600 of ranks = 4645  rank = 1700 of ranks = 4645  rank = 1800 of ranks = 4645  rank = 1900 of ranks = 4645  rank = 2000 of ranks = 4645  rank = 2100 of ranks = 4645  rank = 2200 of ranks = 4645  rank = 2300 of ranks = 4645  rank = 2400 of ranks = 4645  rank = 2500 of ranks = 4645  rank = 2600 of ranks = 4645  rank = 2700 of ranks = 4645  rank = 2800 of ranks = 4645  rank = 2900 of ranks = 4645  rank = 3000 of ranks = 4645  rank = 3100 of ranks = 4645  rank = 3200 of ranks = 4645  rank = 3300 of ranks = 4645  rank = 3400 of ranks = 4645  rank = 3500 of ranks = 4645  rank = 3600 of ranks = 4645  rank = 3700 of ranks = 4645  rank = 3800 of ranks = 4645  rank = 3900 of ranks = 4645  rank = 4000 of ranks = 4645  rank = 4100 of ranks = 4645  rank = 4200 of ranks = 4645  rank = 4300 of ranks = 4645  rank = 4400 of ranks = 4645  rank = 4500 of ranks = 4645  rank = 4600 of ranks = 4645 class_id = 0, name = traffic light, ap = 27.86%   	 (TP = 30, FP = 38) 
+class_id = 1, name = stop, ap = 61.45%   	 (TP = 47, FP = 23) 
+class_id = 2, name = speed limit, ap = 84.62%   	 (TP = 429, FP = 81) 
+class_id = 3, name = crosswalk, ap = 39.67%   	 (TP = 48, FP = 35) 
+class_id = 4, name = danger, ap = 65.28%   	 (TP = 63, FP = 25) 
+class_id = 5, name = mandatory, ap = 61.06%   	 (TP = 47, FP = 29) 
+class_id = 6, name = prohibitory, ap = 65.81%   	 (TP = 41, FP = 32) 
+class_id = 7, name = other, ap = 63.91%   	 (TP = 65, FP = 35) 
+
+ for conf_thresh = 0.25, precision = 0.72, recall = 0.75, F1-score = 0.73 
+ for conf_thresh = 0.25, TP = 770, FP = 298, FN = 263, average IoU = 61.65 % 
+
+ IoU threshold = 75 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.75) = 0.587059, or 58.71 % 
+
+Set -points flag:
+ `-points 101` for MS COCO 
+ `-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+ `-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset

@@ -1,0 +1,36 @@
+ CUDNN_HALF=1 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 16, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 83 K-images (1 Kilo-batches_64) 
+
+ calculation mAP (mean average precision)...
+ Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+
+ detections_count = 7772, unique_truth_count = 1033  
+ rank = 0 of ranks = 7772  rank = 100 of ranks = 7772  rank = 200 of ranks = 7772  rank = 300 of ranks = 7772  rank = 400 of ranks = 7772  rank = 500 of ranks = 7772  rank = 600 of ranks = 7772  rank = 700 of ranks = 7772  rank = 800 of ranks = 7772  rank = 900 of ranks = 7772  rank = 1000 of ranks = 7772  rank = 1100 of ranks = 7772  rank = 1200 of ranks = 7772  rank = 1300 of ranks = 7772  rank = 1400 of ranks = 7772  rank = 1500 of ranks = 7772  rank = 1600 of ranks = 7772  rank = 1700 of ranks = 7772  rank = 1800 of ranks = 7772  rank = 1900 of ranks = 7772  rank = 2000 of ranks = 7772  rank = 2100 of ranks = 7772  rank = 2200 of ranks = 7772  rank = 2300 of ranks = 7772  rank = 2400 of ranks = 7772  rank = 2500 of ranks = 7772  rank = 2600 of ranks = 7772  rank = 2700 of ranks = 7772  rank = 2800 of ranks = 7772  rank = 2900 of ranks = 7772  rank = 3000 of ranks = 7772  rank = 3100 of ranks = 7772  rank = 3200 of ranks = 7772  rank = 3300 of ranks = 7772  rank = 3400 of ranks = 7772  rank = 3500 of ranks = 7772  rank = 3600 of ranks = 7772  rank = 3700 of ranks = 7772  rank = 3800 of ranks = 7772  rank = 3900 of ranks = 7772  rank = 4000 of ranks = 7772  rank = 4100 of ranks = 7772  rank = 4200 of ranks = 7772  rank = 4300 of ranks = 7772  rank = 4400 of ranks = 7772  rank = 4500 of ranks = 7772  rank = 4600 of ranks = 7772  rank = 4700 of ranks = 7772  rank = 4800 of ranks = 7772  rank = 4900 of ranks = 7772  rank = 5000 of ranks = 7772  rank = 5100 of ranks = 7772  rank = 5200 of ranks = 7772  rank = 5300 of ranks = 7772  rank = 5400 of ranks = 7772  rank = 5500 of ranks = 7772  rank = 5600 of ranks = 7772  rank = 5700 of ranks = 7772  rank = 5800 of ranks = 7772  rank = 5900 of ranks = 7772  rank = 6000 of ranks = 7772  rank = 6100 of ranks = 7772  rank = 6200 of ranks = 7772  rank = 6300 of ranks = 7772  rank = 6400 of ranks = 7772  rank = 6500 of ranks = 7772  rank = 6600 of ranks = 7772  rank = 6700 of ranks = 7772  rank = 6800 of ranks = 7772  rank = 6900 of ranks = 7772  rank = 7000 of ranks = 7772  rank = 7100 of ranks = 7772  rank = 7200 of ranks = 7772  rank = 7300 of ranks = 7772  rank = 7400 of ranks = 7772  rank = 7500 of ranks = 7772  rank = 7600 of ranks = 7772  rank = 7700 of ranks = 7772 class_id = 0, name = traffic light, ap = 60.35%   	 (TP = 45, FP = 32) 
+class_id = 1, name = stop, ap = 89.21%   	 (TP = 59, FP = 13) 
+class_id = 2, name = speed limit, ap = 97.82%   	 (TP = 466, FP = 38) 
+class_id = 3, name = crosswalk, ap = 90.09%   	 (TP = 75, FP = 16) 
+class_id = 4, name = danger, ap = 89.81%   	 (TP = 81, FP = 32) 
+class_id = 5, name = mandatory, ap = 83.00%   	 (TP = 56, FP = 20) 
+class_id = 6, name = prohibitory, ap = 76.59%   	 (TP = 49, FP = 43) 
+class_id = 7, name = other, ap = 83.68%   	 (TP = 87, FP = 47) 
+
+ for conf_thresh = 0.25, precision = 0.79, recall = 0.89, F1-score = 0.84 
+ for conf_thresh = 0.25, TP = 918, FP = 241, FN = 115, average IoU = 62.74 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.838197, or 83.82 % 
+
+Set -points flag:
+ `-points 101` for MS COCO 
+ `-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+ `-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset

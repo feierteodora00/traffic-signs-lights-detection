@@ -1,0 +1,34 @@
+ CUDNN_HALF=1 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 256 K-images (4 Kilo-batches_64) 
+
+ calculation mAP (mean average precision)...
+ Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+
+ detections_count = 3548, unique_truth_count = 1033  
+ rank = 0 of ranks = 3548  rank = 100 of ranks = 3548  rank = 200 of ranks = 3548  rank = 300 of ranks = 3548  rank = 400 of ranks = 3548  rank = 500 of ranks = 3548  rank = 600 of ranks = 3548  rank = 700 of ranks = 3548  rank = 800 of ranks = 3548  rank = 900 of ranks = 3548  rank = 1000 of ranks = 3548  rank = 1100 of ranks = 3548  rank = 1200 of ranks = 3548  rank = 1300 of ranks = 3548  rank = 1400 of ranks = 3548  rank = 1500 of ranks = 3548  rank = 1600 of ranks = 3548  rank = 1700 of ranks = 3548  rank = 1800 of ranks = 3548  rank = 1900 of ranks = 3548  rank = 2000 of ranks = 3548  rank = 2100 of ranks = 3548  rank = 2200 of ranks = 3548  rank = 2300 of ranks = 3548  rank = 2400 of ranks = 3548  rank = 2500 of ranks = 3548  rank = 2600 of ranks = 3548  rank = 2700 of ranks = 3548  rank = 2800 of ranks = 3548  rank = 2900 of ranks = 3548  rank = 3000 of ranks = 3548  rank = 3100 of ranks = 3548  rank = 3200 of ranks = 3548  rank = 3300 of ranks = 3548  rank = 3400 of ranks = 3548  rank = 3500 of ranks = 3548 class_id = 0, name = traffic light, ap = 18.94%   	 (TP = 18, FP = 27) 
+class_id = 1, name = stop, ap = 25.23%   	 (TP = 30, FP = 32) 
+class_id = 2, name = speed limit, ap = 73.98%   	 (TP = 395, FP = 115) 
+class_id = 3, name = crosswalk, ap = 31.77%   	 (TP = 43, FP = 34) 
+class_id = 4, name = danger, ap = 35.51%   	 (TP = 43, FP = 40) 
+class_id = 5, name = mandatory, ap = 48.39%   	 (TP = 41, FP = 35) 
+class_id = 6, name = prohibitory, ap = 48.01%   	 (TP = 35, FP = 29) 
+class_id = 7, name = other, ap = 34.48%   	 (TP = 42, FP = 44) 
+
+ for conf_thresh = 0.25, precision = 0.65, recall = 0.63, F1-score = 0.64 
+ for conf_thresh = 0.25, TP = 647, FP = 356, FN = 386, average IoU = 53.76 % 
+
+ IoU threshold = 75 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.75) = 0.395363, or 39.54 % 
+
+Set -points flag:
+ `-points 101` for MS COCO 
+ `-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+ `-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset

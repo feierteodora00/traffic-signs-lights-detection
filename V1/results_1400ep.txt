@@ -1,0 +1,36 @@
+ CUDNN_HALF=1 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 16, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 89 K-images (1 Kilo-batches_64) 
+
+ calculation mAP (mean average precision)...
+ Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+
+ detections_count = 5846, unique_truth_count = 1033  
+ rank = 0 of ranks = 5846  rank = 100 of ranks = 5846  rank = 200 of ranks = 5846  rank = 300 of ranks = 5846  rank = 400 of ranks = 5846  rank = 500 of ranks = 5846  rank = 600 of ranks = 5846  rank = 700 of ranks = 5846  rank = 800 of ranks = 5846  rank = 900 of ranks = 5846  rank = 1000 of ranks = 5846  rank = 1100 of ranks = 5846  rank = 1200 of ranks = 5846  rank = 1300 of ranks = 5846  rank = 1400 of ranks = 5846  rank = 1500 of ranks = 5846  rank = 1600 of ranks = 5846  rank = 1700 of ranks = 5846  rank = 1800 of ranks = 5846  rank = 1900 of ranks = 5846  rank = 2000 of ranks = 5846  rank = 2100 of ranks = 5846  rank = 2200 of ranks = 5846  rank = 2300 of ranks = 5846  rank = 2400 of ranks = 5846  rank = 2500 of ranks = 5846  rank = 2600 of ranks = 5846  rank = 2700 of ranks = 5846  rank = 2800 of ranks = 5846  rank = 2900 of ranks = 5846  rank = 3000 of ranks = 5846  rank = 3100 of ranks = 5846  rank = 3200 of ranks = 5846  rank = 3300 of ranks = 5846  rank = 3400 of ranks = 5846  rank = 3500 of ranks = 5846  rank = 3600 of ranks = 5846  rank = 3700 of ranks = 5846  rank = 3800 of ranks = 5846  rank = 3900 of ranks = 5846  rank = 4000 of ranks = 5846  rank = 4100 of ranks = 5846  rank = 4200 of ranks = 5846  rank = 4300 of ranks = 5846  rank = 4400 of ranks = 5846  rank = 4500 of ranks = 5846  rank = 4600 of ranks = 5846  rank = 4700 of ranks = 5846  rank = 4800 of ranks = 5846  rank = 4900 of ranks = 5846  rank = 5000 of ranks = 5846  rank = 5100 of ranks = 5846  rank = 5200 of ranks = 5846  rank = 5300 of ranks = 5846  rank = 5400 of ranks = 5846  rank = 5500 of ranks = 5846  rank = 5600 of ranks = 5846  rank = 5700 of ranks = 5846  rank = 5800 of ranks = 5846 class_id = 0, name = traffic light, ap = 76.09%   	 (TP = 52, FP = 16) 
+class_id = 1, name = stop, ap = 97.48%   	 (TP = 60, FP = 12) 
+class_id = 2, name = speed limit, ap = 98.15%   	 (TP = 469, FP = 51) 
+class_id = 3, name = crosswalk, ap = 93.02%   	 (TP = 78, FP = 13) 
+class_id = 4, name = danger, ap = 89.15%   	 (TP = 78, FP = 14) 
+class_id = 5, name = mandatory, ap = 87.02%   	 (TP = 57, FP = 18) 
+class_id = 6, name = prohibitory, ap = 83.40%   	 (TP = 51, FP = 36) 
+class_id = 7, name = other, ap = 83.57%   	 (TP = 78, FP = 18) 
+
+ for conf_thresh = 0.25, precision = 0.84, recall = 0.89, F1-score = 0.87 
+ for conf_thresh = 0.25, TP = 923, FP = 178, FN = 110, average IoU = 66.76 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.884846, or 88.48 % 
+
+Set -points flag:
+ `-points 101` for MS COCO 
+ `-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+ `-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset
